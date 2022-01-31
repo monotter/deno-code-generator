@@ -1,25 +1,16 @@
-# CodeGenerator
-
-[![npm version](https://badge.fury.io/js/node-code-generator.svg)](http://badge.fury.io/js/node-code-generator)
-![build](https://api.travis-ci.org/palicao/node-code-generator.svg?branch=master)
-[![coverage](https://coveralls.io/repos/palicao/node-code-generator/badge.svg?branch=master&service=github)](https://coveralls.io/github/palicao/node-code-generator?branch=master)
-
-## Installation
-
-```bash
-$ npm install node-code-generator
-```
+# Deno-Code-Generator
+> this module ported from https://github.com/palicao/node-code-generator, by me for deno usage
 
 ## Usage
 
-```js
-var CodeGenerator = require('node-code-generator');
-var generator = new CodeGenerator();
-var pattern = 'ABC#+';
-var howMany = 100;
-var options = {};
+```ts
+import { CodeGenerator } from 'https://deno.land/deno-code-generator@v1.0.0/mod.ts'
+const generator = new CodeGenerator()
+const pattern = 'ABC#+'
+const howMany = 100
+const options = {}
 // Generate an array of random unique codes according to the provided pattern:
-var codes = generator.generateCodes(pattern, howMany, options);
+const codes = generator.generateCodes(pattern, howMany, options)
 ```
 
 ## Pattern

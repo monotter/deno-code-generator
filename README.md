@@ -4,7 +4,7 @@
 ## Usage
 
 ```ts
-import { CodeGenerator } from 'https://deno.land/deno-code-generator@v1.0.4/mod.ts'
+import { CodeGenerator } from 'https://deno.land/deno_code_generator@v1.0.5/mod.ts'
 const generator = new CodeGenerator()
 const pattern = 'ABC#+'
 const howMany = 100
